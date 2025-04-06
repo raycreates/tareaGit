@@ -73,3 +73,71 @@ button {
 button:hover {
     background: #2112f3;
 }
+
+.login {
+    height: 460px;
+    background:  #3498db;;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+
+.login label {
+    color: #000000;
+    transform: scale(.8);
+}
+
+.login label.forgot-password {
+    color: #f39c12;
+    font-size: 14px;
+    margin-top: 22px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.login label.forgot-password:hover {
+    color: #E85A4F;
+}
+
+#chk:checked ~ .login {
+    transform: translateY(-500px);
+}
+
+#chk:checked ~ .login label {
+    transform: scale(1);
+}
+
+#chk:checked ~ .signup label {
+    transform: scale(.8);
+}
+
+@media (max-width: 576px) {
+    .main {
+        width: 90%;
+        max-width: 350px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    input,
+    button {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    label {
+        font-size: 1.8em;
+        margin: 30px 0;
+    }
+
+    .login label {
+		
+        font-size: 1.6em;
+        margin: 55px 0;
+    }
+
+    .login label.forgot-password {
+        margin-top: 20px;
+    }
+}
